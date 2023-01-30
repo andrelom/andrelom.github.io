@@ -1,0 +1,63 @@
+baseURL = 'https://andrelom.github.io/'
+languageCode = 'en-us'
+
+theme = 'papermod'
+
+publishDir = '../docs'
+contentDir = './content'
+
+title = 'André Moraes'
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = 'production'
+title = 'André Moraes'
+description = 'Just to share some learnings, ideas and projects.'
+keywords = ['.NET', 'C#', 'JavaScript', 'TypeScript', 'Node.js', 'React.js']
+author = 'André Moraes'
+
+[params.assets]
+disableFingerprinting = true
+
+[params.label]
+text = 'André Moraes'
+
+[params.homeInfoParams]
+title = "Hey, I'm Andre Moraes"
+content = "I'm a solution architect from Brazil, and this is my blog, just to share some learnings, ideas and projects."
+
+[[params.socialIcons]]
+name = 'github'
+url = 'https://github.com/andrelom/'
+
+[[params.socialIcons]]
+name = 'linkedin'
+url = 'https://www.linkedin.com/in/andrelom/'
+
+[[params.socialIcons]]
+name = 'email'
+url = 'mailto:andrelom@gmail.com'
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 1
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 2
+
+[[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 3
